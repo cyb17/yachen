@@ -10,7 +10,7 @@ spec:
     matchLabels:
       app: my-app
   template:
-  	metadata:
+    metadata:
       labels:
         app: my-app
     spec:
@@ -28,7 +28,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: my-app
+    app: my-app
   ports:
     - protocol: TCP
       port: 8081
